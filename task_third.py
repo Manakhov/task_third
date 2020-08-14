@@ -1,5 +1,7 @@
 def check(x):
-    if x % 3 == 0:
+    if x % 3 == 0 and x % 5 == 0:
+        return "foobar"
+    elif x % 3 == 0:
         return "foo"
     elif x % 5 == 0:
         return "bar"
