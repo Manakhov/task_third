@@ -1,12 +1,12 @@
 def check(x):
-    if x % 3 == 0 and x % 5 == 0:
-        return 'foobar'
-    elif x % 3 == 0:
-        return 'foo'
-    elif x % 5 == 0:
-        return 'bar'
-    else:
-        return x
+    value = ''
+    if x % 3 == 0:
+        value = 'foo'
+    if x % 5 == 0:
+        return value + 'bar'
+    elif value.isalpha():
+        return value
+    return x
 
 
 def count(checked_array, key):
